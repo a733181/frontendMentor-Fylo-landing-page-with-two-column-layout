@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>frontendMentor-Fylo-landing-page-with-two-column-layout</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/style.css" />
     <style>
       .bg {
         background: url('./src/images/illustration-2.svg') no-repeat right 114px /
@@ -126,8 +127,14 @@
         </a>
         <ul class="flex justify-between flex-col lg:flex-row">
           <li class="mb-6 lg:mb-0">
-            <p class="mb-3">Phone: +1-543-123-4567</p>
-            <p class="mb-3">example@fylo.com</p>
+            <div class="flex items-center mb-3">
+              <img src="./src/images/icon-phone.svg" class="w-5 mr-3" />
+              <p>Phone: +1-543-123-4567</p>
+            </div>
+            <div class="flex items-center mb-3">
+              <img src="./src/images/icon-email.svg" class="w-5 mr-3" />
+              <p>example@fylo.com</p>
+            </div>
           </li>
           <li class="mb-6 lg:mb-0">
             <a href="#" class="block mb-3 hover:text-[#3065f8]">About Us</a>
@@ -139,6 +146,29 @@
             <a href="#" class="block mb-3 hover:text-[#3065f8]">Contact Us</a>
             <a href="#" class="block mb-3 hover:text-[#3065f8]">Terms</a>
             <a href="#" class="block mb-3 hover:text-[#3065f8]">Privacy</a>
+          </li>
+          <li class="flex gap-5 items-center">
+            <div class="icon-hover w-10 p-2 border rounded-full">
+              <img
+                src="./src/images/facebook.svg"
+                alt="facebook"
+                class="w-full"
+              />
+            </div>
+            <div class="icon-hover w-10 p-2 border rounded-full">
+              <img
+                src="./src/images/twitter.svg"
+                alt="twitter"
+                class="w-full"
+              />
+            </div>
+            <div class="icon-hover w-10 p-2 border rounded-full">
+              <img
+                src="./src/images/instagram.svg"
+                alt="instagram"
+                class="w-full"
+              />
+            </div>
           </li>
         </ul>
         <p class="text-center mt-8">
